@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(247, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #302f2f;
+}
+
+h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+
+h2 {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1280px;
+}
+
+header div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    max-width: 700px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: rgb(114, 206, 242);
+    width: 100%;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: cornflowerblue;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: rgb(72, 2, 102)
+}
+
+footer {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 30px;
+}
+
+footer p {
+    line-height: 40px;
+}
+
+#hero .wrapper {
+    background-image: url("../images/indexheading.jpg");
+    background-size: 100% 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+#hero h2 {
+    padding: 150px 0;
+    color: white
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(114, 206, 242);
+    border-collapse: collapse;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+table {
+    width: 61.8%;
+    margin: 20px auto;
+    border-radius: 4px;
+
+}
+
+th {
+    background-color: rgb(114, 206, 242);
+}
+
+article {
+    clear: both;
+    margin: 100px 0;
+}
+
+article h3 {
+    max-width: 480px;
+    margin: 80px auto;
+    background-color: rgb(114, 206, 242);
+    border-radius: 4px;
+    padding: 30px 40px;
+    color: white
+}
+
+article ul img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+}
+
+article ul {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    text-align: center;
+}
+
+article ul li {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.button {
+    display: block;
+    width: 100px;
+    border: 2px solid cornflowerblue;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: cornflowerblue;
+}
+
+.button:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.button:active {
+    text-decoration: underline;
+}
+
+.button:visited {
+    color: rgb(72, 2, 102);
+}

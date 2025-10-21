@@ -1,0 +1,210 @@
+body {
+    background-color: rgb(247, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #302f2f;
+}
+
+h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+
+h2 {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+small {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1280px;
+}
+
+header div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    max-width: 700px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+    background-color: rgb(114, 206, 242);
+    width: 100%;
+}
+
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: cornflowerblue;
+}
+
+nav ul li a:active {
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: rgb(72, 2, 102)
+}
+
+footer {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 30px;
+}
+
+footer p {
+    line-height: 40px;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    border: 2px solid cornflowerblue;
+    margin: 40px auto 80px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: cornflowerblue;
+}
+
+.button:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.button:active {
+    text-decoration: underline;
+}
+
+.button:visited {
+    color: rgb(72, 2, 102);
+}
+
+section,
+article {
+    clear: both;
+    margin: 40px 0;
+}
+
+#intro .wrapper {
+    border-top: 10px solid rgb(114, 206, 242);
+    border-bottom: 10px solid rgb(114, 206, 242);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 400px;
+}
+
+#intro img {
+    height: 400px;
+    width: auto;
+}
+
+#intro .content {
+    width: 60%;
+    padding: 0 30px;
+}
+
+#intro h3 {
+    padding-bottom: 30px;
+}
+
+article img {
+    height: 400px;
+    width: auto;
+
+}
+
+article .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+article .image {
+    text-align: center;
+}
+
+article .content {
+    width: 50%;
+    min-width: 450px;
+    border-bottom: 5px solid rgb(114, 206, 242);
+    margin: 30px 0;
+    padding: 20px;
+}
+
+article .content h4 {
+    padding-bottom: 20px;
+}
+
+#video .wrapper {
+    text-align: center;
+    border-bottom: 5px solid rgb(114, 206, 242);
+}
+
+video {
+    width: 61.8%;
+    height: auto;
+}
