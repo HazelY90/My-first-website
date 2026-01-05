@@ -101,6 +101,41 @@ footer {
     padding: 30px;
 }
 
+.viewer {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+}
+
+.buttonholder {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgholder {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer button {
+    font-size: 40px;
+    margin: 0 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
 footer p {
     line-height: 40px;
 }

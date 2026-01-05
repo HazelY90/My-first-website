@@ -87,6 +87,18 @@
         </div>
     </section>
 
+    <div class="viewer" id="viewer">
+        <div class="buttonholder">
+            <button id="prev">
+                < </button>
+                    <button id="next">></button>
+                    <button id="close">x</button><br>
+        </div>
+        <div class="imgholder">
+            <img id="imgviewer">
+        </div>
+    </div>
+
     <section id="end">
         <div class="wrapper">
             <h2>it's the end of the page.<br> but the travel never ends.</h2>
@@ -99,6 +111,53 @@
             <p>Contact: hxyang2023@gmail.com</p>
         </div>
     </footer>
+
+    <script src="js/viewer.js"></script>
+    <script>
+        imglist = ["images/galleryc_1.JPEG",
+            "images/galleryc_2.jpg",
+            "images/galleryc_3.jpg",
+            "images/galleryc_6.JPEG",
+            "images/galleryc_4.JPEG",
+            "images/galleryc_5.jpg",
+            "images/galleryc_7.JPEG",
+            "images/galleryc_8.JPEG",
+            "images/galleryc_9.JPEG",
+            "images/galleryc_10.JPEG",
+            "images/galleryj_1.JPEG",
+            "images/galleryj_2.JPEG",
+            "images/galleryj_3.JPEG",
+            "images/galleryj_4.JPEG",
+            "images/galleryj_5.JPEG",
+            "images/galleryj_6.JPEG",
+            "images/galleryj_7.JPEG",
+            "images/galleryj_9.JPEG",
+            "images/galleryj_8.JPEG",
+            "images/galleryi_1.JPEG",
+            "images/galleryi_4.JPEG",
+            "images/galleryi_2.JPEG",
+            "images/galleryi_3.JPEG",
+            "images/galleryi_5.JPEG"
+        ]
+
+        initViewer(imglist)
+        const imgs = document.querySelectorAll(".wrapper img")
+        for (const img of imgs) {
+            const src = img.getAttribute("src")
+            const index = imglist.indexOf(src)
+            if (index >= 0) {
+                img.addEventListener("click", function () {
+                    openViewer(index)
+                })
+            }
+        }
+
+        document.getElementById("next").addEventListener("click", next)
+        document.getElementById("prev").addEventListener("click", prev)
+        document.getElementById("close").addEventListener("click", closeViewer)
+
+
+    </script>
 
 </body>
 
